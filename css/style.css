@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #262626;
+  color: #fff;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container p,
+.container li {
+  font-size: 1.2rem;
+}
+
+.container .search-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.container .search-card h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container .search-card .search-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.container .search-card .search-div #search {
+  width: 40%;
+  height: 2rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  background-color: #4d4d4d;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 0;
+}
+
+.container .search-card .search-div #search:hover {
+  background-color: #595959;
+}
+
+@media (max-width: 1000px) {
+  .container .search-card .search-div #search {
+    width: 60%;
+  }
+}
+
+.container .search-card .search-div #submit {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #4d4d4d;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.container .search-card .search-div #submit:hover {
+  cursor: pointer;
+  background-color: #595959;
+}
+
+.container .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3.5rem;
+}
+
+.container .content .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 40%;
+  background-color: #333333;
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
+}
+
+.container .content .card img {
+  margin: 2rem 0;
+}
+
+.container .content .card .content-div {
+  width: 100%;
+}
+
+.container .content .card .content-div span {
+  font-weight: bold;
+}
+
+.container .content .card .content-div .diet-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.container .content .card .content-div .diet-div p {
+  margin-right: 5px;
+}
+
+.container .content .card .content-div .health-div__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .content .card .content-div .health-div__items p {
+  margin-right: 5px;
+}
+
+.container .content .card .ingredients-div {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.container .content .card .ingredients-div span {
+  font-weight: bold;
+}
+
+.container .content .card .ingredients-div p {
+  margin: 1rem 0;
+}
+
+.container .content .card .recipe-btn {
+  position: absolute;
+  bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 0;
+  background-color: #4d4d4d;
+}
+
+.container .content .card .recipe-btn:hover {
+  background-color: #595959;
+  cursor: pointer;
+}
+
+.container .content .card .recipe-btn a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .container .content .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.container .content .insert-error {
+  color: #ff0033;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.middle {
+  height: 100vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

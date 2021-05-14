@@ -1,0 +1,13 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// mobile responsive mixin
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}

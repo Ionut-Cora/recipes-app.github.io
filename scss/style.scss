@@ -1,0 +1,197 @@
+@import './resets';
+@import './variables';
+@import './mixins';
+
+body {
+    background: $secondary-color;
+    color: $primary-color;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.container {
+    @include flexCenter;
+
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+
+    p,
+    li {
+        font-size: 1.2rem;
+    }
+
+    .search-card {
+
+        @include flexCenter;
+        margin: 2rem 0;
+        width: 100%;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-div {
+
+            @include flexCenter;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 1rem;
+
+            #search {
+                width: 40%;
+                height: 2rem;
+                border-radius: 5px;
+                margin-right: 1rem;
+                background-color: lighten($secondary-color, 15%);
+                color: $primary-color;
+                font-size: 1.2rem;
+                border: 0;
+
+                &:hover {
+                    background-color: lighten($secondary-color, 20%);
+                }
+
+                @include mobile {
+                    width: 60%;
+                }
+                
+            }
+        
+            #submit {
+                width: 7rem;
+                height: 2rem;
+                border-radius: 5px;
+                background-color: lighten($secondary-color, 15%);
+                border: 0;
+                color: $primary-color;
+                font-weight: bold;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: lighten($secondary-color, 20%);
+                }
+            }
+        }
+
+    }
+
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 3.5rem;
+    
+        .card {
+            @include flexCenter;
+        
+            justify-content: flex-start;
+            width: 40%;
+            background-color: lighten($secondary-color, 5%);
+            margin: 1rem;
+            border-radius: 5px;
+            padding: 2rem;
+            position: relative;
+    
+            img {
+                margin: 2rem 0;
+            }
+    
+            .content-div {
+    
+                width: 100%;
+    
+                span {
+                    font-weight: bold;
+                }
+    
+                .diet-div {
+                    display: flex;
+                    margin: 1rem 0;
+
+                    p {
+                        margin-right: 5px;
+                    }
+                }
+        
+                .health-div {
+    
+        
+                    &__items {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        p {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+    
+    
+            .ingredients-div {
+                width: 100%;
+                margin-bottom: 2rem;
+    
+                span {
+                    font-weight: bold;
+                }
+    
+                p {
+                    margin: 1rem 0;
+                }
+            }
+    
+            .recipe-btn {
+                position: absolute;
+                bottom: 1rem;
+                padding: 0.5rem;
+                border-radius: 5px;
+                border: 0;
+                background-color: lighten($secondary-color, 15%);
+    
+                &:hover {
+                    background-color: lighten($secondary-color, 20%);
+                    cursor: pointer;
+
+                }
+    
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $primary-color;
+                }
+            }
+
+            @include mobile {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        .insert-error {
+            color: $error-color;
+            text-align: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+}
+
+.middle {
+    height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
