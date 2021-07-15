@@ -87,10 +87,15 @@ body {
   color: #fff;
   font-size: 1.2rem;
   border: 0;
+  padding: 1rem;
 }
 
 .container .search-card .search-div #search:hover {
   background-color: #595959;
+}
+
+.container .search-card .search-div #search:focus {
+  outline: none;
 }
 
 @media (max-width: 1000px) {
@@ -107,6 +112,7 @@ body {
   border: 0;
   color: #fff;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .container .search-card .search-div #submit:hover {
@@ -151,8 +157,18 @@ body {
   position: relative;
 }
 
+.container .content .card h1 {
+  text-align: center;
+}
+
 .container .content .card img {
   margin: 2rem 0;
+}
+
+@media (max-width: 1000px) {
+  .container .content .card img {
+    width: 100%;
+  }
 }
 
 .container .content .card .content-div {
@@ -222,7 +238,7 @@ body {
 @media (max-width: 1000px) {
   .container .content .card {
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem 0;
   }
 }
 

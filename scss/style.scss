@@ -48,9 +48,14 @@ body {
                 color: $primary-color;
                 font-size: 1.2rem;
                 border: 0;
+                padding: 1rem;
 
                 &:hover {
                     background-color: lighten($secondary-color, 20%);
+                }
+
+                &:focus {
+                    outline: none;
                 }
 
                 @include mobile {
@@ -67,6 +72,7 @@ body {
                 border: 0;
                 color: $primary-color;
                 font-weight: bold;
+                text-transform: uppercase;
 
                 &:hover {
                     cursor: pointer;
@@ -95,9 +101,17 @@ body {
             border-radius: 5px;
             padding: 2rem;
             position: relative;
+
+            h1 {
+                text-align: center;
+            }
     
             img {
                 margin: 2rem 0;
+
+                @include mobile {
+                    width: 100%;
+                }
             }
     
             .content-div {
@@ -168,7 +182,7 @@ body {
 
             @include mobile {
                 width: 100%;
-                margin: 0 auto;
+                margin: 1rem 0;
             }
         }
 
