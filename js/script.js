@@ -33,7 +33,7 @@ submit.addEventListener('click', submitDisplay = () => {
                 displayReceipe(data);
             })
     } else {
-        content.innerHTML = '<p class="insert-error">Please insert an ingredient in the search bar !</p>';
+        content.innerHTML = '<p class="insert-error">Please insert an ingredient or a dish !</p>';
     }
 
 
