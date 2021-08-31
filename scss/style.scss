@@ -108,7 +108,7 @@ body {
         
             justify-content: flex-start;
             width: 40%;
-            background: #000000d0;
+            background: lighten($secondary-color, 10%);
             margin: 1rem;
             border-radius: 5px;
             padding: 2rem;
@@ -178,10 +178,10 @@ body {
                 border-radius: 5px;
                 border: 0;
                 text-transform: uppercase;
-                background-color: lighten($secondary-color, 15%);
+                background-color: lighten($secondary-color, 20%);
     
                 &:hover {
-                    background-color: lighten($secondary-color, 20%);
+                    background-color: lighten($secondary-color, 25%);
                     cursor: pointer;
 
                 }

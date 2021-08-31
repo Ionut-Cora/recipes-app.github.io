@@ -174,7 +174,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 40%;
-  background: #000000d0;
+  background: #404040;
   margin: 1rem;
   border-radius: 5px;
   padding: 2rem;
@@ -246,11 +246,11 @@ body {
   border-radius: 5px;
   border: 0;
   text-transform: uppercase;
-  background-color: #4d4d4d;
+  background-color: #595959;
 }
 
 .container .content .card .recipe-btn:hover {
-  background-color: #595959;
+  background-color: #666666;
   cursor: pointer;
 }
 
