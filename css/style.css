@@ -31,6 +31,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 1000px) {
+  .container {
+    width: 95%;
+  }
+}
+
 .container p,
 .container li {
   font-size: 1.2rem;
@@ -92,18 +98,17 @@ body {
 
 .container .search-card .search-div #search {
   width: 40%;
-  height: 2rem;
   border-radius: 5px;
   margin-right: 1rem;
-  background-color: #4d4d4d;
+  background: #000000d0;
   color: #fff;
   font-size: 1.2rem;
   border: 0;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .container .search-card .search-div #search:hover {
-  background-color: #595959;
+  background: #121212;
 }
 
 .container .search-card .search-div #search:focus {
@@ -118,18 +123,18 @@ body {
 
 .container .search-card .search-div #submit {
   width: 7rem;
-  height: 2rem;
   border-radius: 5px;
-  background-color: #4d4d4d;
+  background: #000000d0;
   border: 0;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 0.7rem;
 }
 
 .container .search-card .search-div #submit:hover {
   cursor: pointer;
-  background-color: #595959;
+  background: #333333;
 }
 
 @media (max-width: 1000px) {
@@ -168,7 +173,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 40%;
-  background-color: #333333;
+  background: #000000d0;
   margin: 1rem;
   border-radius: 5px;
   padding: 2rem;
@@ -222,7 +227,7 @@ body {
 
 .container .content .card .ingredients-div {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .container .content .card .ingredients-div span {
@@ -236,9 +241,10 @@ body {
 .container .content .card .recipe-btn {
   position: absolute;
   bottom: 1rem;
-  padding: 0.5rem;
+  padding: 0.7rem 1rem;
   border-radius: 5px;
   border: 0;
+  text-transform: uppercase;
   background-color: #4d4d4d;
 }
 
