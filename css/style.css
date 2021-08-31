@@ -100,7 +100,7 @@ body {
   width: 40%;
   border-radius: 5px;
   margin-right: 1rem;
-  background: #000000d0;
+  background: #404040;
   color: #fff;
   font-size: 1.2rem;
   border: 0;
@@ -108,7 +108,7 @@ body {
 }
 
 .container .search-card .search-div #search:hover {
-  background: #121212;
+  background: #383838;
 }
 
 .container .search-card .search-div #search:focus {
@@ -118,13 +118,14 @@ body {
 @media (max-width: 1000px) {
   .container .search-card .search-div #search {
     width: 90%;
+    margin-right: 0;
   }
 }
 
 .container .search-card .search-div #submit {
   width: 7rem;
   border-radius: 5px;
-  background: #000000d0;
+  background: #404040;
   border: 0;
   color: #fff;
   font-weight: bold;

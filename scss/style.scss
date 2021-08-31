@@ -51,14 +51,14 @@ body {
                 width: 40%;
                 border-radius: 5px;
                 margin-right: 1rem;
-                background: #000000d0;
+                background: lighten($secondary-color, 10%);
                 color: $primary-color;
                 font-size: 1.2rem;
                 border: 0;
                 padding: 0.5rem;
 
                 &:hover {
-                    background: lighten(#000000, 7%);
+                    background: lighten($secondary-color, 7%);
                 }
 
                 &:focus {
@@ -67,6 +67,7 @@ body {
 
                 @include mobile {
                     width: 90%;
+                    margin-right: 0;
                 }
                 
             }
@@ -74,7 +75,7 @@ body {
             #submit {
                 width: 7rem;
                 border-radius: 5px;
-                background: #000000d0;
+                background: lighten($secondary-color, 10%);
                 border: 0;
                 color: $primary-color;
                 font-weight: bold;
@@ -83,7 +84,7 @@ body {
 
                 &:hover {
                     cursor: pointer;
-                    background: lighten(#000000, 20%);
+                    background: lighten($secondary-color, 5%);
                 }
 
                 @include mobile {
