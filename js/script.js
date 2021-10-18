@@ -63,24 +63,26 @@ function displayReceipe(data) {
                             <p><span>Health label: </span></p>
                             ${
                                 hit.recipe.healthLabels.map(healthLabel => {
-                                    return `<p>${healthLabel}</p>`;
+                                    return `<p class="health-label">${healthLabel}</p>`;
                                 })
                             }                              
                         </div>
                     </div>
                 </div>
                 <div class="ingredients-div">
-                    <p><span>Ingredients: </span></p>
-                    <ul>
-                        ${
-                            hit.recipe.ingredientLines.map(ingredient => {
-                                return `<li>${ingredient}</li>`;
-                            })
-                        }                                        
-                    </ul>
+                    <details>
+                        <summary>Ingredients:</summary>
+                        <ul id="taglist">
+                            ${
+                                hit.recipe.ingredientLines.map(ingredient => {
+                                    return `<li>${ingredient}</li>`;
+                                })
+                            }                                        
+                        </ul>
+                    </details>
                 </div>
                 <button class="recipe-btn">
-                    <a href="${hit.recipe.url}">View Recipe</a>                      
+                    <a href="${hit.recipe.url}" target="_blank">View Recipe</a>                     
                 </button>
             </div>
         `;

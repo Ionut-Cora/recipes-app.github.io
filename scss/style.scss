@@ -3,9 +3,10 @@
 @import './mixins';
 
 body {
-    background: $secondary-color;
+    // background: $secondary-color;
     color: $primary-color;
-    font-family: 'Goudy Bookletter 1911', serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),  url(../images/background.jpg);
 }
 
 .container {
@@ -31,8 +32,12 @@ body {
         width: 100%;
 
         h1 {
-            font-size: 3rem;
+            font-size: 5rem;
             margin-bottom: 1rem;
+
+            @include mobile {
+                font-size: 3rem;
+            }
         }
 
         .search-div {
@@ -51,14 +56,14 @@ body {
                 width: 40%;
                 border-radius: 5px;
                 margin-right: 1rem;
-                background: lighten($secondary-color, 10%);
+                background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
                 color: $primary-color;
-                font-size: 1.2rem;
                 border: 0;
-                padding: 0.5rem;
+                padding: 17px 25px 16px;
+                font-size: 1.125rem;
 
                 &:hover {
-                    background: lighten($secondary-color, 7%);
+                    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
                 }
 
                 &:focus {
@@ -73,18 +78,17 @@ body {
             }
         
             #submit {
-                width: 7rem;
                 border-radius: 5px;
-                background: lighten($secondary-color, 10%);
+                background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
                 border: 0;
                 color: $primary-color;
-                font-weight: bold;
                 text-transform: uppercase;
-                padding: 0.7rem;
+                padding: 17px 50px 16px;
+                font-size: 1.125rem;
 
                 &:hover {
                     cursor: pointer;
-                    background: lighten($secondary-color, 5%);
+                    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
                 }
 
                 @include mobile {
@@ -108,11 +112,12 @@ body {
         
             justify-content: flex-start;
             width: 40%;
-            background: lighten($secondary-color, 10%);
             margin: 1rem;
             border-radius: 5px;
             padding: 2rem;
             position: relative;
+            background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+
 
             h1 {
                 text-align: center;
@@ -144,14 +149,17 @@ body {
                 }
         
                 .health-div {
-    
         
                     &__items {
                         display: flex;
                         flex-wrap: wrap;
 
                         p {
-                            margin-right: 5px;
+                            padding: 0.5px 0 5px 0.1rem;
+                        }
+
+                        .health-label {
+                            padding-left: 0.5rem;
                         }
                     }
                 }
@@ -160,36 +168,47 @@ body {
     
             .ingredients-div {
                 width: 100%;
-                margin-bottom: 3rem;
+                margin: 2rem 0 5rem;
+                padding-left: 1rem;
     
-                span {
-                    font-weight: bold;
+                ul {
+                    margin: 2rem 0;
+
+                    li {
+                        list-style-type: none;
+                    }
+
+                    li:before { 
+                        content: '\1F944'; margin-left: -20px; margin-right: 10px; 
+                    }
                 }
-    
-                p {
-                    margin: 1rem 0;
+
+                summary {
+                    font-size: 1.5rem;
+                    cursor: pointer;
                 }
             }
     
             .recipe-btn {
                 position: absolute;
                 bottom: 1rem;
-                padding: 0.7rem 1rem;
+                padding: 17px 50px 16px;
+                font-size: 1.125rem;
                 border-radius: 5px;
                 border: 0;
+                margin-bottom: 1rem;
                 text-transform: uppercase;
-                background-color: lighten($secondary-color, 20%);
+                background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     
                 &:hover {
-                    background-color: lighten($secondary-color, 25%);
+                    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
                     cursor: pointer;
 
                 }
     
                 a {
                     text-decoration: none;
-                    font-weight: bold;
-                    color: $primary-color;
+                    color: black;
                 }
             }
 
