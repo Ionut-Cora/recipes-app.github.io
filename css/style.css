@@ -159,6 +159,12 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 1000px) {
+  .container .search-card {
+    width: 100%;
+  }
+}
+
 .container .content {
   width: 100%;
   display: -webkit-box;

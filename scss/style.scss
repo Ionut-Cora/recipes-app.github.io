@@ -94,6 +94,7 @@ body {
                     margin-top: 10px;
                 }
             }
+
         }
 
         .insert-error {
@@ -102,6 +103,10 @@ body {
             padding-top: 25px;
             font-weight: bold;
             text-transform: uppercase;
+        }
+
+        @include mobile {
+            width: 100%;
         }
 
     }
