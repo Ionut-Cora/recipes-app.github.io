@@ -1,8 +1,12 @@
 
+const secondaryColor = '#6CAA7F';
+const errorColor = '#ff0033';
+
 const search = document.getElementById('search');
 const submit = document.getElementById('submit');
 const content = document.querySelector('.content');
 const container = document.querySelector('.container');
+const errorMessage = document.querySelector('.error-message');
 
 const app_key = config.API_KEY;
 const app_id = config.API_ID;
@@ -20,22 +24,24 @@ window.addEventListener('load', () => {
 });
 
 submit.addEventListener('click', submitDisplay = () => {
-    content.innerHTML = '';
     
     if (search.value !== '') {
+        errorMessage.innerHTML = '';
+        search.style.borderColor = secondaryColor;
         container.classList.remove('middle');
 
         fetch(`https://api.edamam.com/search?q=${search.value}&app_id=${app_id}&app_key=${app_key}&to=20`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
+                content.innerHTML = '';
     
                 displayReceipe(data);
             })
     } else {
-        content.innerHTML = '<p class="insert-error">Please insert an ingredient or a dish !</p>';
+        search.style.borderColor = errorColor;
+        errorMessage.innerHTML = '<p class="insert-error">Please insert an ingredient or a dish !</p>';
     }
-
 
     search.value = '';
 });
