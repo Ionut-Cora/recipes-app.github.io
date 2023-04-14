@@ -14,7 +14,7 @@ const app_id = config.API_ID;
 window.addEventListener('load', () => {
     container.classList.remove('middle');
 
-    fetch(`https://api.edamam.com/search?q="chicken"&app_id=${app_id}&app_key=${app_key}&to=20`)
+    fetch(`https://api.edamam.com/search?q="chicken"&app_id=${app_id}&app_key=${app_key}&to=10`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
@@ -27,10 +27,10 @@ submit.addEventListener('click', submitDisplay = () => {
     
     if (search.value !== '') {
         errorMessage.innerHTML = '';
-        search.style.borderColor = secondaryColor;
+        search.style.border = 'none';
         container.classList.remove('middle');
 
-        fetch(`https://api.edamam.com/search?q=${search.value}&app_id=${app_id}&app_key=${app_key}&to=20`)
+        fetch(`https://api.edamam.com/search?q=${search.value}&app_id=${app_id}&app_key=${app_key}&to=10`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
@@ -39,7 +39,7 @@ submit.addEventListener('click', submitDisplay = () => {
                 displayReceipe(data);
             })
     } else {
-        search.style.borderColor = errorColor;
+        search.style.border = '1px solid' + errorColor;
         errorMessage.innerHTML = '<p class="insert-error">Please insert an ingredient or a dish !</p>';
     }
 
