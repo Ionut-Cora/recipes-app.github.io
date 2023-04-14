@@ -5,9 +5,22 @@
     flex-direction: column;
 }
 
-// mobile responsive mixin
-@mixin mobile {
-    @media (max-width: $mobile) {
+// mobile responsive mixins
+
+@mixin small {
+    @media (max-width: $small) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: $medium) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (max-width: $large) {
         @content;
     }
 }

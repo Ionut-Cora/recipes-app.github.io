@@ -50,7 +50,7 @@ function displayReceipe(data) {
     data.hits.forEach(hit => {
         content.innerHTML += `
             <div class="card">
-                <h1>${hit.recipe.label}</h1>
+                <h2>${hit.recipe.label}</h2>
                 <img src="${hit.recipe.image}">
                 <div class="content-div">
                     <p><span>Calories: </span>${hit.recipe.calories.toPrecision(6)}kcal</p>
@@ -87,9 +87,11 @@ function displayReceipe(data) {
                         </ul>
                     </details>
                 </div>
-                <button class="recipe-btn">
-                    <a href="${hit.recipe.url}" target="_blank">View Recipe</a>                     
-                </button>
+                <div class="view-recipe-div">               
+                    <button class="custom-btn recipe-btn">
+                        <a href="${hit.recipe.url}" target="_blank">View Recipe</a>                     
+                    </button>
+                </div>
             </div>
         `;
     });
