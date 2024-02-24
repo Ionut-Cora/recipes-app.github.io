@@ -3,10 +3,11 @@
 @import './mixins';
 
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .custom-btn {
+    font-family: "Montserrat", sans-serif;
     border-radius: 0.375rem;
     border: 0;
     text-transform: uppercase;
@@ -79,6 +80,7 @@ body {
                 }
     
                 #search {
+                    font-family: "Montserrat", sans-serif;
                     width: 50%;
                     margin-right: 1rem;
                     padding: 1rem 2rem;
@@ -101,7 +103,9 @@ body {
                     }                    
                 }
             
-                #submit {  
+                #submit {
+                    font-family: "Montserrat", sans-serif;
+
                     @include medium {
                         margin-top: 1rem;
                         width: 50%;
