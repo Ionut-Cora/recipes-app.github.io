@@ -54,14 +54,10 @@ body {
   color: #373a3c;
 }
 .page .container .search-card h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   color: #aa6c6c;
-}
-@media (max-width: 768px) {
-  .page .container .search-card h1 {
-    font-size: 4rem;
-  }
+  text-align: center;
 }
 @media (max-width: 576px) {
   .page .container .search-card h1 {

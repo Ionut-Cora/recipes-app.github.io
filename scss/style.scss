@@ -48,13 +48,10 @@ body {
             color: #373a3c;
     
             h1 {
-                font-size: 5rem;
+                font-size: 4rem;
                 margin-bottom: 1rem;
                 color: $secondary-color;
-    
-                @include medium {
-                    font-size: 4rem;
-                }
+                text-align: center;
 
                 @include small {
                     font-size: 3rem
