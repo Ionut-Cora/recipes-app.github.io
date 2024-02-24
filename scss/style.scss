@@ -39,11 +39,6 @@ body {
         @include large {
             width: 90%;
         }
-
-        p,
-        li {
-            font-size: 1.2rem;
-        }
     
         .search-card {   
             @include flexCenter;
@@ -154,6 +149,11 @@ body {
                 h2 {
                     text-align: center;
                     color: $secondary-color;
+                    font-size: 2rem;
+
+                    @include small {
+                        font-size: 1.5rem;
+                    }
                 }
 
                 .card-content {

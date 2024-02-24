@@ -44,10 +44,6 @@ body {
     width: 90%;
   }
 }
-.page .container p,
-.page .container li {
-  font-size: 1.2rem;
-}
 .page .container .search-card {
   display: flex;
   justify-content: center;
@@ -165,6 +161,12 @@ body {
 .page .container .content .card h2 {
   text-align: center;
   color: #aa6c6c;
+  font-size: 2rem;
+}
+@media (max-width: 576px) {
+  .page .container .content .card h2 {
+    font-size: 1.5rem;
+  }
 }
 .page .container .content .card .card-content {
   display: flex;
