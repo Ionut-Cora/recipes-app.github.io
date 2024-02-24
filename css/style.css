@@ -14,17 +14,17 @@ body {
   text-transform: uppercase;
   padding: 1rem 2rem;
   font-size: 1.125rem;
-  background-color: #6CAA7F;
+  background-color: #aa6c6c;
   color: #FFFFFF;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .custom-btn:hover {
   cursor: pointer;
-  background-color: #5da071;
+  background-color: #a05d5d;
 }
 
 .page {
-  background-image: linear-gradient(to right, #E9F2EB, #dcfce7);
+  background-image: linear-gradient(to right, #f2f1e9, #fcf2dc);
 }
 .page .container {
   display: flex;
@@ -60,7 +60,7 @@ body {
 .page .container .search-card h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
-  color: #6CAA7F;
+  color: #aa6c6c;
 }
 @media (max-width: 768px) {
   .page .container .search-card h1 {
@@ -159,7 +159,7 @@ body {
 }
 .page .container .content .card h2 {
   text-align: center;
-  color: #6CAA7F;
+  color: #aa6c6c;
 }
 .page .container .content .card .card-content {
   display: flex;
@@ -196,7 +196,7 @@ body {
 .page .container .content .card .card-content .content-div p span {
   font-weight: bold;
   text-transform: uppercase;
-  color: #6CAA7F;
+  color: #aa6c6c;
 }
 .page .container .content .card .card-content .content-div .diet-div {
   display: flex;
@@ -222,7 +222,7 @@ body {
 .page .container .content .card .card-content .ingredients-div__items p span {
   font-weight: bold;
   text-transform: uppercase;
-  color: #6CAA7F;
+  color: #aa6c6c;
 }
 .page .container .content .card .card-content .ingredients-div__items .label {
   padding-left: 0.5rem;
@@ -253,12 +253,12 @@ body {
   text-transform: capitalize;
 }
 .back-to-top-div a:hover {
-  color: #6CAA7F;
+  color: #aa6c6c;
 }
 
 footer {
   height: 3rem;
-  color: #6CAA7F;
+  color: #aa6c6c;
   display: flex;
   align-items: center;
   justify-content: center;
