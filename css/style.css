@@ -202,18 +202,18 @@ body {
   display: flex;
   margin: 1rem 0;
 }
-.page .container .content .card .card-content .content-div .diet-div p {
-  margin-right: 5px;
+.page .container .content .card .card-content .content-div .diet-div .label {
+  padding-left: 0.5rem;
 }
 .page .container .content .card .card-content .content-div .health-div__items {
   display: flex;
   flex-wrap: wrap;
 }
-.page .container .content .card .card-content .content-div .health-div__items .health-label {
+.page .container .content .card .card-content .content-div .health-div__items .label {
   padding-left: 0.5rem;
 }
 .page .container .content .card .card-content .ingredients-div {
-  margin: 2rem 0;
+  margin: 1rem 0 2rem;
 }
 .page .container .content .card .card-content .ingredients-div__items {
   display: flex;
@@ -224,7 +224,7 @@ body {
   text-transform: uppercase;
   color: #6CAA7F;
 }
-.page .container .content .card .card-content .ingredients-div__items .ingredient-label {
+.page .container .content .card .card-content .ingredients-div__items .label {
   padding-left: 0.5rem;
 }
 .page .container .content .card .card-content .view-recipe-div {

@@ -195,8 +195,8 @@ body {
                             display: flex;
                             margin: 1rem 0;
         
-                            p {
-                                margin-right: 5px;
+                            .label {
+                                padding-left: 0.5rem;
                             }
                         }
                 
@@ -206,7 +206,7 @@ body {
                                 display: flex;
                                 flex-wrap: wrap;
         
-                                .health-label {
+                                .label {
                                     padding-left: 0.5rem;
                                 }
                             }
@@ -214,7 +214,7 @@ body {
                     }       
             
                     .ingredients-div {
-                        margin: 2rem 0;
+                        margin: 1rem 0 2rem;
     
                         &__items {
                             display: flex;
@@ -228,7 +228,7 @@ body {
                                 }
                             }
 
-                            .ingredient-label {
+                            .label {
                                 padding-left: 0.5rem;
                             }
                         }

@@ -14,11 +14,10 @@ const app_id = config.API_ID;
 window.addEventListener('load', () => {
     container.classList.remove('middle');
 
-    fetch(`https://api.edamam.com/search?q="chicken"&app_id=${app_id}&app_key=${app_key}&to=10`)
+    fetch(`https://api.edamam.com/search?q="main"&app_id=${app_id}&app_key=${app_key}&to=10`)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
-    
+                // console.log(data);
                 displayReceipe(data);
             })
 });
@@ -33,9 +32,8 @@ submit.addEventListener('click', submitDisplay = () => {
         fetch(`https://api.edamam.com/search?q=${search.value}&app_id=${app_id}&app_key=${app_key}&to=10`)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                // console.log(data);
                 content.innerHTML = '';
-    
                 displayReceipe(data);
             })
     } else {
@@ -60,20 +58,18 @@ function displayReceipe(data) {
                             <p><span>Calories: </span>${hit.recipe.calories.toPrecision(6)}kcal</p>
                             <div class="diet-div">
                                 <p><span>Diet label: </span></p>
-                                <div>
-                                    ${
-                                        hit.recipe.dietLabels.map(dietLabel => {
-                                            return `<p>${dietLabel}</p>`;
-                                        })
-                                    }                              
-                                </div>
+                                ${
+                                    hit.recipe.dietLabels.map(dietLabel => {
+                                        return `<p class="label">${dietLabel}</p>`;
+                                    })
+                                }
                             </div>
                             <div class="health-div">
                                 <div class="health-div__items">
                                     <p><span>Health label: </span></p>
                                     ${
                                         hit.recipe.healthLabels.map(healthLabel => {
-                                            return `<p class="health-label">${healthLabel}</p>`;
+                                            return `<p class="label">${healthLabel}</p>`;
                                         })
                                     }                              
                                 </div>
@@ -84,7 +80,7 @@ function displayReceipe(data) {
                                 <p><span>Ingredients:</span></p>
                                 ${
                                     hit.recipe.ingredientLines.map(ingredient => {
-                                        return `<p class="ingredient-label">${ingredient}</p>`;
+                                        return `<p class="label">${ingredient}</p>`;
                                     })
                                 }
                             </div>
